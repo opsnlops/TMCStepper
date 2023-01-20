@@ -1,6 +1,10 @@
 
 #pragma once
 
+#include <climits>
+#include <cstdio>
+#include <unistd.h>
+
 #if defined(ARDUINO_ARCH_AVR)
 
     #include <Arduino.h>
@@ -339,8 +343,8 @@
 
 #elif defined(PICO_BOARD)
 
-    #include <pico/stdlib.h>
-    #include <hardware/spi.h>
+    #include "pico/stdlib.h"
+    #include "hardware/spi.h"
 
     namespace TMC_HAL {
         using PinDef = uint;

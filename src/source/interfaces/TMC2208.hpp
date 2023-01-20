@@ -1,6 +1,10 @@
 
 #pragma once
 
+#include <climits>
+#include <cstdio>
+#include <unistd.h>
+
 #include "../../TMCStepper.h"
 #include "TMC2130.hpp"
 

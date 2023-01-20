@@ -1,6 +1,11 @@
 #pragma once
 #pragma pack(push, 1)
 
+#include <climits>
+#include <cstdio>
+#include <unistd.h>
+
+
 struct DRVCTRL_1_t {
   constexpr static uint8_t address = 0b00;
   union {
